@@ -18,29 +18,36 @@
         <div class="row">
             <div class="col-12">
                 <form>
-                    <div class="d-flex shadow">
+                    <div class="d-lg-flex d-block shadow search-box">
                         <!-- Search Bar -->
-                        <div class="search d-inline-block align-items-center">
-                            <i class="feather-search me-2"></i>
+                        <div class="search d-block d-lg-inline-block align-items-center">
+                            <i class="feather-search me-1"></i>
                             <input type="text" placeholder="Search by city and hotels" class="me-4">
                         </div>
 
                         <!-- Date Picker -->
-                        <div class="dt d-inline-block">
-                            <input type="date" placeholder="" class="">
+                        <div class="dt d-flex justify-content-between align-items-center">
+                           <div>
+                               <label for="checkIn" class="text-primary small d-lg-none d-block">Check-in</label>
+                                <input type="date" id="checkIn">
+                           </div>
                             <i class="feather-refresh-ccw fs-4 mx-4"></i>
-                            <input type="date" placeholder="" class="">
+                           <div>
+                            <label for="checkOut" class="text-primary small d-lg-none d-block">Check-out</label>
+                                <input type="date">
+                           </div>
                         </div>
 
                         <!-- Room Select -->
-                        <div class="d-flex align-items-center">
+                        <div class="d-block d-lg-flex align-items-center mt-3 mt-lg-0">
+                            <span class="text-primary small d-lg-none d-block ms-3 mb-0 ms-lg-0">Rooms and Guests</span>
                             <div class="dropdown">
                                 <button class="btn ms-1 btn-room" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     1 Room, 2 Guest
                                 </button>
 
-                                <ul class="dropdown-menu custom-menu mt-3" aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu custom-menu mt-0 mt-lg-3" aria-labelledby="dropdownMenuButton1">
                                     <li>
                                         <div class="d-flex justify-content-between fw-bold px-3 align-items-center">
                                             <span class="mb-0">Rooms</span>
@@ -82,8 +89,10 @@
                         </div>
 
                         <!-- Search Btn -->
-                        <button class="btn btn-primary btn-search ms-3">Search</button>
+                        <button class="btn btn-primary btn-search ms-0 ms-lg-4">Search</button>
                     </div>
+
+                    <!-- <button class="w-100 fw-bold btn-lg-search btn btn-primary mt-3 py-2 d-block d-lg-none">Search</button> -->
                 </form>
             </div>
         </div>
