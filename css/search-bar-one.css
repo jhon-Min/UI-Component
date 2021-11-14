@@ -1,1 +1,53 @@
+.search {
+  padding: 18px 15px;
+  border-right: 1px solid #555;
+}
 
+.search input {
+  border: none;
+  font-size: 20px;
+}
+
+.search input:focus-visible {
+  outline: none;
+}
+
+.dt {
+  padding: 18px 15px;
+  border-right: 1px solid #555;
+}
+
+.dt input {
+  border: none;
+  font-size: 18px;
+}
+
+::-webkit-calendar-picker-indicator {
+  margin-left: -30px;
+}
+
+.dt input:focus-visible {
+  outline: none;
+}
+
+.btn-room {
+  font-size: 20px;
+}
+
+.btn-room:focus {
+  box-shadow: none;
+}
+
+.custom-menu {
+  min-width: 15rem !important;
+}
+
+.guest-control input {
+  width: 50px;
+}
+
+.btn-search {
+  border-radius: 0 !important;
+  font-size: 20px;
+  width: 159px;
+}
